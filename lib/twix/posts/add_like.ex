@@ -10,7 +10,7 @@ defmodule Twix.Posts.AddLike do
     end
   end
 
-  defp add_like (post) do
+  defp add_like(post) do
     likes = post.likes + 1
     post = Changeset.change(post, likes: likes)
 
