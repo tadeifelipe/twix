@@ -6,7 +6,7 @@ defmodule Twix.Posts.Post do
 
   @required_params [:text, :user_id]
 
-  schema "users" do
+  schema "posts" do
     field :text, :string
     field :likes, :integer, default: 0
     field :age, :integer
